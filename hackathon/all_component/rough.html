@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>EBOOK: Index</title>
+
+<link href="allcomponents/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<style type="text/css">
+.back-img{
+background: url("img/backgroundreg.jpg");
+height: 25vH;
+width: 100%;
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+.crd-ho:hover{
+ background: url("img/homeimg.jpg");
+
+    }
+    
+</style>
+
+<body style="background-color: 	 #f2f2f2">
+<%@include file="all_component/navbar.jsp"%>
+
+<div class="container-fluid back-img"></div>
+<% Connection conn=DBConnect.getConn();
+out.println(conn);%> 
+
+  <div class="container" >
+  <br/>
+  <h3 align='center' style="bold"><i class="fa-solid fa-fire" style="color: #fbc228;"></i> Hot Picks </h3>
+  <div class="row">
+  <div class="col-md-3">
+  <div class="card crd-ho">
+  <div class="card-body text-center">
+  <img alt="" src="product_images/phone1.jpg"style="width:200px; height: 200px">
+  <p>Iphone 14</p>
+       <div class="row">
+        <a href="" class="btn btn-danger btn-bg ml-5" >Add Cart</a>
+        <a href="" class="btn btn-danger btn-bg ml-1">Buy</a>
+      
+  </div>
+   <p class="btn-bg"><br/>69000/-</p>
+  </div>
+  </div>
+  </div>
+  <div class="col-md-3">
+  <div class="card crd-ho">
+  <div class="card-body text-center">
+  <img alt="" src="product_images/watch1.jpg"style="width:165px; height: 200px">
+  <p>Samsung Watch</p>
+       <div class="row">
+        <a href="" class="btn btn-danger btn-bg ml-5" >Add Cart</a>
+        <a href="" class="btn btn-danger btn-bg ml-1">Buy</a>
+      
+  </div>
+   <p class="btn-bg"><br/>12000/-</p>
+  </div>
+  </div>
+  </div>
+  <div class="col-md-3">
+  <div class="card crd-ho">
+  <div class="card-body text-center">
+  <img alt="" src="product_images/luggage1.jpg"style="width:170px; height: 200px">
+  <p>luggage</p>
+       <div class="row">
+        <a href="" class="btn btn-danger btn-bg ml-5" >Add Cart</a>
+        <a href="" class="btn btn-danger btn-bg ml-1">Buy</a>
+      
+  </div>
+   <p class="btn-bg"><br/>75000/-</p>
+  </div>
+  </div>
+  </div>
+  
+  <div class="col-md-3">
+  <div class="card crd-ho">
+  <div class="card-body text-center">
+  <img alt="" src="product_images/phone1.jpg"style="width:200px; height: 200px">
+  <p>Iphone 14</p>
+       <div class="row">
+        <a href="" class="btn btn-danger btn-bg ml-5" >Add Cart</a>
+        <a href="" class="btn btn-danger btn-bg ml-1">Buy</a>
+      
+  </div>
+   <p class="btn-bg"><br/>68000/-</p>
+  </div>
+  </div>
+                 
+  
+</div>
+  </div>
+  
+  
+  <div class="flex-container">
+  
+     <div class="flex-box">
+          <h3><br/>Health & Personal Care</h3>
+        
+            <img alt="" src="img/healthcare.jpg"style="width:300px; height: 400px">
+            <h6><a href="">Shop More</a></h6>
+     </div>
+     
+    <div class="flex-box">
+          <h3><br/>Beauty picks</h3>
+        
+            <img alt="" src="img/buety.jfif"style="width:300px; height: 400px">
+            <h6><a href="">Shop More</a></h6>
+     </div>
+     
+     <div class="flex-box">
+          <h3><br/>Electronics</h3>
+        
+            <img alt="" src="img/electronics.webp"style="width:300px; height: 390px">
+            <h6><a href="">Shop More</a></h6>
+     </div>
+     
+</div>
+  
+  </div>
+
+</body>
+</html>

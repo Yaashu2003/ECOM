@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>WAD</title>
+<script type="text/javascript">
+var name=document.yformp.userName.value;  
+var Phno=document.yformp.Phno.value; 
+unction matchpass(){  
+	var firstpassword=document.yformp.password1.value;  
+	var secondpassword=document.yformp.password2.value;  
+	  
+	if(firstpassword==secondpassword){  
+	return true;  
+	}  
+	else{  
+	alert("password must be same!");  
+	return false;  
+	}  
+	}  
+
+</script>
+
+
+</head>
+
+
+<body>
+
+
+
+ 
+ <form name="yformp" align="center" onsubmit="return matchpass()">
+  <h2 >Create New Profile</h2>
+
+  <span>UserName</span>
+      <input type="text" required="required" name="userName"/>
+ </br>  <span>Phno</span>
+        <input type="text" required="required" name="Phno"/>
+</br>
+     <span>Email ID</span>
+       <input type="email" required="required" name="Email"/>
+
+ </br>    <span>Password</span>
+      <input type="password" required="required" name="password1"/>
+
+   </br>   <span>Confirm Password</span>
+          <input type="password" required="required" name="password2"/>
+         
+ </br>        
+         <input type="radio"  value="Male" name="Gender"/>MALE
+       <input type="radio"  value="Female" name="Gender"/>Female
+            <input type="radio"  value="Other" name="Gender"/>Other
+</br>
+             <input type= "reset" value="Reset" />
+         <input type="submit" value="Register"  >   
+
+ </form>
+ 
+
+
+</body>
+</html>
